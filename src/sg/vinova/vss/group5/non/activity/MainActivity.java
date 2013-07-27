@@ -64,5 +64,4 @@ public class MainActivity extends Activity {
 	public void finishMainActivity(View v){
 		MainActivity.this.finish();
 	}
-
 }
