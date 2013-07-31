@@ -3,10 +3,7 @@ package sg.vinova.vss.group5.non.activity;
 import sg.vinova.vss.group5.non.R;
 import android.app.Activity;
 import android.content.Intent;
-<<<<<<< HEAD
 import android.content.SharedPreferences;
-=======
->>>>>>> 36ca071d98987f2dab973e30d736cad294dd5ecd
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -32,7 +29,6 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
-<<<<<<< HEAD
 	String prefname="my_data";
 	
 	
@@ -40,7 +36,6 @@ public class MainActivity extends Activity {
 	{
 		SharedPreferences pre=getSharedPreferences
 				(prefname,MODE_PRIVATE);
-			//lấy giá trị checked ra, nếu không thấy thì giá trị mặc định là false
 			boolean bchk=pre.getBoolean("checked", false);
 			
 			if (!bchk)
@@ -57,12 +52,12 @@ public class MainActivity extends Activity {
 			}
 	}
 
-	private void StartMainScreen(View v) {
+	/*private void StartMainScreen(View v) {
 		// TODO Auto-generated method stub
 		Intent intent = new Intent(this, MainScreen.class);
 		startActivity(intent);
-	}
-
+	}*/
+	
 	public void StartLogIn(View v){
 		Intent intent = new Intent(this, LoginActivity.class);
 		startActivity(intent);
@@ -81,21 +76,6 @@ public class MainActivity extends Activity {
 	}
 
 	@Override
-=======
-	@Override
-	protected void onPause() {
-		// TODO Auto-generated method stub
-		super.onPause();
-	}
-
-	@Override
-	protected void onRestart() {
-		// TODO Auto-generated method stub
-		super.onRestart();
-	}
-
-	@Override
->>>>>>> 36ca071d98987f2dab973e30d736cad294dd5ecd
 	protected void onResume() {
 		// TODO Auto-generated method stub
 		super.onResume();
@@ -111,15 +91,4 @@ public class MainActivity extends Activity {
 		super.onDestroy();
 	}
 	
-<<<<<<< HEAD
-=======
-	public void StartLogIn(View v){
-		Intent intent = new Intent(this, LoginActivity.class);
-		startActivity(intent);
-	}
-	
->>>>>>> 36ca071d98987f2dab973e30d736cad294dd5ecd
-	public void finishMainActivity(View v){
-		MainActivity.this.finish();
-	}
 }

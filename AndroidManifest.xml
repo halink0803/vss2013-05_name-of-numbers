@@ -21,13 +21,8 @@
             android:name="sg.vinova.vss.group5.non.activity.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
-<<<<<<< HEAD
           			<action android:name="android.intent.action.MAIN" />
                 	<category android:name="android.intent.category.LAUNCHER" />
-=======
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
->>>>>>> 36ca071d98987f2dab973e30d736cad294dd5ecd
             </intent-filter>
         </activity>
         <activity
@@ -46,16 +41,11 @@
 				<category android:name="android.intent.category.BROWSABLE" />		
 			</intent-filter>
         </activity>
-        
-<<<<<<< HEAD
         <activity 
             android:name="sg.vinova.vss.group5.non.activity.MainScreen"
             android:label="@string/app_name"
             >
         </activity>
-        
-=======
->>>>>>> 36ca071d98987f2dab973e30d736cad294dd5ecd
     </application>
 
 </manifest>

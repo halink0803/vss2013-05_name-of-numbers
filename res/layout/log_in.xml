@@ -35,9 +35,6 @@
         android:text="@string/skip"
         android:textColor="@color/white"
         android:layout_margin="@dimen/main_space"  
-<<<<<<< HEAD
         android:onClick="Skip"
-=======
->>>>>>> 36ca071d98987f2dab973e30d736cad294dd5ecd
         />
 </LinearLayout>
