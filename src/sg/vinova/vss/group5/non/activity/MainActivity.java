@@ -3,7 +3,10 @@ package sg.vinova.vss.group5.non.activity;
 import sg.vinova.vss.group5.non.R;
 import android.app.Activity;
 import android.content.Intent;
+<<<<<<< HEAD
 import android.content.SharedPreferences;
+=======
+>>>>>>> 36ca071d98987f2dab973e30d736cad294dd5ecd
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -29,6 +32,7 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
+<<<<<<< HEAD
 	String prefname="my_data";
 	
 	
@@ -77,6 +81,21 @@ public class MainActivity extends Activity {
 	}
 
 	@Override
+=======
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+	}
+
+	@Override
+	protected void onRestart() {
+		// TODO Auto-generated method stub
+		super.onRestart();
+	}
+
+	@Override
+>>>>>>> 36ca071d98987f2dab973e30d736cad294dd5ecd
 	protected void onResume() {
 		// TODO Auto-generated method stub
 		super.onResume();
@@ -92,6 +111,14 @@ public class MainActivity extends Activity {
 		super.onDestroy();
 	}
 	
+<<<<<<< HEAD
+=======
+	public void StartLogIn(View v){
+		Intent intent = new Intent(this, LoginActivity.class);
+		startActivity(intent);
+	}
+	
+>>>>>>> 36ca071d98987f2dab973e30d736cad294dd5ecd
 	public void finishMainActivity(View v){
 		MainActivity.this.finish();
 	}

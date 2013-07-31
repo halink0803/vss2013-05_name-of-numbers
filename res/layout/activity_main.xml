@@ -35,6 +35,10 @@
         android:text="@string/enter"
         android:textColor="@color/white"
         android:onClick="StartLogIn" 
+<<<<<<< HEAD
         /> 
+=======
+        />
+>>>>>>> 36ca071d98987f2dab973e30d736cad294dd5ecd
 
 </RelativeLayout>

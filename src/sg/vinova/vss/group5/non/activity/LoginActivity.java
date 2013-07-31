@@ -49,10 +49,13 @@ public class LoginActivity extends Activity {
 	public void launchOAuth(View view) {
 		startActivity(new Intent().setClass(view.getContext(), RequestTokenActivity.class));
 	}
+<<<<<<< HEAD
 	
 	public void Skip(View v){
 		Intent intent = new Intent(this, MainScreen.class);
 		startActivity(intent);
 	}
+=======
+>>>>>>> 36ca071d98987f2dab973e30d736cad294dd5ecd
 
 }

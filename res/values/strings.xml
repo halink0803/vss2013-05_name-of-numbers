@@ -10,6 +10,9 @@
     <string name="NoN">NoN</string>
     <string name="enter">Enter</string>
     <string name="title_activity_request_token">RequestTokenActivity</string>
+<<<<<<< HEAD
     <string name="listContact">List Contacts Go Here</string>
+=======
+>>>>>>> 36ca071d98987f2dab973e30d736cad294dd5ecd
 
 </resources>

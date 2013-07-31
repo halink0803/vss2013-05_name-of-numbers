@@ -6,5 +6,9 @@
     <dimen name="main_margin">64dp</dimen>
     <dimen name="main_space">6dp</dimen>
     <dimen name="font_large">44dp</dimen>
+<<<<<<< HEAD
     <dimen name="font_medium">22dp</dimen>
 </resources>
+=======
+</resources>
+>>>>>>> 36ca071d98987f2dab973e30d736cad294dd5ecd
