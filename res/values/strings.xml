@@ -11,4 +11,10 @@
     <string name="enter">Enter</string>
     <string name="title_activity_request_token">RequestTokenActivity</string>
     <string name="listContact">List Contacts Go Here</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="get_token">Get Token</string>
+    <string name="get_contacts">Get Contacts</string>
+    <string name="delele_token">Delelte Token</string>
+    <string name="console">Console</string>
+
 </resources>

@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -21,14 +22,17 @@ public class MainActivity extends Activity {
 		btnenter = (Button) findViewById(R.id.enter);
 		btnenter.setOnClickListener(
 				new View.OnClickListener() {
-			public void onClick(View arg0) {
-				check();
+			public void onClick(View view) {
+				//check(view);
+				Log.d(C.TAG, "peo 3");
+				startActivity(new Intent().setClass(view.getContext(), LoginActivity.class));
+				Log.d(C.TAG, "peo 4");
 			}
 		});
 	}
 	
 	String prefname="my_data";
-	public void check()
+	public void check(View view)
 	{
 		SharedPreferences pre=getSharedPreferences
 				(prefname,MODE_PRIVATE);
@@ -36,15 +40,14 @@ public class MainActivity extends Activity {
 			
 			if (!bchk)
 			{
-				StartLogIn();
+				//StartLogIn(view);
+				Log.d(C.TAG, "peo");
+				startActivity(new Intent().setClass(view.getContext(), LoginActivity.class));
 				
-				/*Intent intent = new Intent(this, LoginActivity.class);
-				startActivity(intent);*/
-				//tạo đối tượng Editor để lưu thay đổi
 				SharedPreferences.Editor editor=pre.edit();
-					//lưu vào editor
+				
 					editor.putBoolean("checked", true);
-				//chấp nhận lưu xuống file
+				
 				editor.commit();
 			}
 			else
@@ -74,12 +77,12 @@ public class MainActivity extends Activity {
 		Intent intent = new Intent(this, MainScreen.class);
 		startActivity(intent);
 	}
-	
+	/*
 	public void StartLogIn(){
 		finish();
 		Intent intent = new Intent(this, LoginActivity.class);
 		startActivity(intent);
-	}
+	}*/
 	
 	@Override
 	protected void onPause() {

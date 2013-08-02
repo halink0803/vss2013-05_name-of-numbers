@@ -20,6 +20,6 @@ public class C {
 	public static final String	OAUTH_CALLBACK_SCHEME	= "non";
 	public static final String	OAUTH_CALLBACK_HOST		= "callback";
 	public static final String	OAUTH_CALLBACK_URL		= OAUTH_CALLBACK_SCHEME + "://" + OAUTH_CALLBACK_HOST;
-	public static final String	APP_NAME                = "NoN";
+	public static final String	APP_NAME                = "Name of Numbers";
 
 }

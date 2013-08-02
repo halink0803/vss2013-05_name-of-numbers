@@ -4,14 +4,24 @@ import sg.vinova.vss.group5.non.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
 public class LoginActivity extends Activity {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		Log.d(C.TAG, "zzz");
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.log_in);
+		setContentView(R.layout.activity_login);
+		Button launchOAuth = (Button) findViewById(R.id.launchOAuth); 
+		launchOAuth.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+            	Log.d(C.TAG, "Piu 15");
+            	startActivity(new Intent().setClass(v.getContext(), RequestTokenActivity.class));            	
+            }
+        });
 	}
 
 	@Override
