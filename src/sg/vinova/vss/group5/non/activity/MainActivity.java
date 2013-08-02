@@ -63,6 +63,34 @@ public class MainActivity extends Activity {
         });
 	}
 	
+	/**
+	String prefname="my_data";
+	public void check()
+	{
+		SharedPreferences pre=getSharedPreferences
+				(prefname,MODE_PRIVATE);
+			boolean bchk=pre.getBoolean("checked", false);
+			
+			if (!bchk)
+			{
+				
+				//Intent intent = new Intent(this, LoginActivity.class);
+				//startActivity(intent);			
+				SharedPreferences.Editor editor=pre.edit();
+					//lÆ°u vÃ o editor
+					editor.putBoolean("checked", true);				
+				editor.commit();
+			}
+			else
+			{
+				StartMainScreen();
+				//Intent intent = new Intent(this, MainScreen.class);
+				//startActivity(intent);
+			}
+	}
+	*/
+	
+	
 	public void launchOAuth(View view) {				
 		Intent intent = new Intent(view.getContext(), PrepareRequestTokenActivity.class);		
 		startActivity(intent);
@@ -115,9 +143,10 @@ public class MainActivity extends Activity {
     private boolean isOAuthSuccessful() {
     	String token = prefs.getString(OAuth.OAUTH_TOKEN, null);
 		String secret = prefs.getString(OAuth.OAUTH_TOKEN_SECRET, null);
-		if (token != null && secret != null)
-			return true;
-		else 
+		if (token != null && secret != null) {
+			StartMainScreen();
+			return true;			
+		} else 
 			return false;
     }
 	
@@ -145,5 +174,15 @@ public class MainActivity extends Activity {
         }
         Log.i(C.TAG,"Response : " + responseBuilder.toString());
         return responseBuilder.toString();
+        
+        
+	}	
+	
+	private void StartMainScreen() {
+		// TODO Auto-generated method stub
+		//finish();
+		Log.d(C.TAG, "Pepo5 b");
+		Intent intent = new Intent(this, MainScreen.class);
+		startActivity(intent);
 	}	
 }

@@ -11,5 +11,11 @@
     <string name="empty"></string>
     <string name="get_contact">Get Contact</string>
     <string name="clear_credentials">Delete Token</string>
+    <string name="skip">SKIP</string>
+    <string name="or">OR</string>
+    <string name="NoN">NoN</string>
+    <string name="enter">Enter</string>
+    <string name="title_activity_request_token">RequestTokenActivity</string>
+    <string name="listContact">List Contacts Go Here</string>
 
 </resources>
