@@ -1,4 +1,4 @@
-package sg.vinova.vss.group5.non;
+package sg.vinova.vss.group5.non.activity;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -13,6 +13,8 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import sg.vinova.vss.group5.non.R;
 
 import android.app.Activity;
 import android.content.Intent;

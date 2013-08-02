@@ -17,7 +17,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="sg.vinova.vss.group5.non.MainActivity"
+            android:name="sg.vinova.vss.group5.non.activity.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,11 +26,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="sg.vinova.vss.group5.non.OAuthActivity"
+            android:name="sg.vinova.vss.group5.non.activity.OAuthActivity"
             android:label="@string/title_activity_oauth" >
         </activity>
         <activity
-            android:name="sg.vinova.vss.group5.non.PrepareRequestTokenActivity"
+            android:name="sg.vinova.vss.group5.non.activity.PrepareRequestTokenActivity"
             android:label="@string/title_activity_prepare_request_token" 
             android:launchMode="singleTask">
             <intent-filter>

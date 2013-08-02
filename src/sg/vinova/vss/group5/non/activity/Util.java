@@ -1,4 +1,4 @@
-package sg.vinova.vss.group5.non;
+package sg.vinova.vss.group5.non.activity;
 
 import android.content.SharedPreferences;
 

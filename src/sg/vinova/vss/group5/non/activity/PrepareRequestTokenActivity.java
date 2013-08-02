@@ -1,5 +1,6 @@
-package sg.vinova.vss.group5.non;
+package sg.vinova.vss.group5.non.activity;
 
+import sg.vinova.vss.group5.non.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
