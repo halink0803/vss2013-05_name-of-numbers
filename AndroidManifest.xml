@@ -25,21 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="sg.vinova.vss.group5.non.activity.OAuthActivity"
-            android:label="@string/title_activity_oauth" >
-        </activity>
-        <activity
-            android:name="sg.vinova.vss.group5.non.activity.PrepareRequestTokenActivity"
-            android:label="@string/title_activity_prepare_request_token" 
-            android:launchMode="singleTask">
-            <intent-filter>
-				<action android:name="android.intent.action.VIEW" />
-				<category android:name="android.intent.category.DEFAULT" />
-				<category android:name="android.intent.category.BROWSABLE" />
-				<data android:scheme="x-oauthflow" android:host="callback" />
-			</intent-filter>
-        </activity>
+        
 	</application>
 
 </manifest>
