@@ -4,7 +4,6 @@ import sg.vinova.vss.group5.non.R;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
-import android.util.Log;
 
 public class MainScreen extends FragmentActivity{
 	private FragmentTabHost mTabhost;
@@ -12,7 +11,7 @@ public class MainScreen extends FragmentActivity{
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_screen);
-		Log.d(C.TAG, "Pepo5");
+		
 		mTabhost = (FragmentTabHost) findViewById(android.R.id.tabhost);
 		mTabhost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
 		mTabhost.addTab(mTabhost.newTabSpec("all").setIndicator("ALL"),Tab1.class, null);

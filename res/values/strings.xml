@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">NameOfNumber</string>
+    <string name="app_name">Names of Numbers</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="login_oauth">Login via OAuth</string>
-    <string name="title_activity_oauth">OAuthActivity</string>
-    <string name="title_activity_prepare_request_token">PrepareRequestToken</string>
-    <string name="redirect">Dang chuyen den trang dang nhap. Xin vui long doi trong giay lat !</string>
-    <string name="empty"></string>
-    <string name="get_contact">Get Contact</string>
-    <string name="clear_credentials">Delete Token</string>
+    <string name="google_acc">Log in via Google Account</string>
     <string name="skip">SKIP</string>
     <string name="or">OR</string>
     <string name="NoN">NoN</string>
     <string name="enter">Enter</string>
     <string name="title_activity_request_token">RequestTokenActivity</string>
     <string name="listContact">List Contacts Go Here</string>
-
 </resources>
